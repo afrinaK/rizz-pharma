@@ -1,0 +1,245 @@
+.testimonials-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: #121631;
+    color: white;
+    position: relative; /* For pseudo-element positioning */
+    overflow: hidden; /* Hide overflow for angled lines */
+  }
+  
+  .testimonials-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    color: #f4a261;
+  }
+  
+
+  
+  .testimonials-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+  }
+  
+  .testimonial-card {
+    background: #1e2447;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: left;
+    scroll-snap-align: start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: none;
+    position: relative; /* For quote positioning */
+  }
+  
+  .testimonial-card:before {
+    content: "“";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 2em;
+    color: #667398;
+    opacity: 0.5; /* Reduced Opacity */
+    z-index: 1;
+  }
+  
+  .testimonial-text {
+    font-style: italic;
+    color: #ddd;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 2; /* Ensure text is above quote */
+  }
+  
+  .testimonial-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .testimonial-footer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .testimonial-footer h4 {
+    margin: 0;
+    color: #eee;
+  }
+  
+  .testimonial-footer p {
+    margin: 0;
+    font-size: 0.8em;
+    color: #aaa;
+  }
+  
+  .stars {
+    color: #f4a261; /* Correct Gold Color */
+    margin-top: 10px;
+    position: relative;
+    z-index: 2; /* Ensure stars are above quote */
+  }
+  
+  /* Slider Navigation Dots */
+  .slider-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    z-index: 2; /* Ensure dots are above the angled lines */
+  }
+  
+  .slider-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #888;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .slider-dot.active {
+    background-color: #fff;
+  }.testimonials-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: #121631;
+    color: white;
+    position: relative; /* For pseudo-element positioning */
+    overflow: hidden; /* Hide overflow for angled lines */
+  }
+  
+  .testimonials-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    color: #f4a261;
+  }
+  
+  .testimonials-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px 0;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  }
+  
+  .testimonials-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+  }
+  
+  .testimonial-card {
+    background: #1e2447;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: left;
+    scroll-snap-align: start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: none;
+    position: relative; /* For quote positioning */
+  }
+  
+  .testimonial-card:before {
+    content: "“";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 2em;
+    color: #667398;
+    opacity: 0.5; /* Reduced Opacity */
+    z-index: 1;
+  }
+  
+  .testimonial-text {
+    font-style: italic;
+    color: #ddd;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 2; /* Ensure text is above quote */
+  }
+  
+  .testimonial-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .testimonial-footer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .testimonial-footer h4 {
+    margin: 0;
+    color: #eee;
+  }
+  
+  .testimonial-footer p {
+    margin: 0;
+    font-size: 0.8em;
+    color: #aaa;
+  }
+  
+  .stars {
+    color: #f4a261; /* Correct Gold Color */
+    margin-top: 10px;
+    position: relative;
+    z-index: 2; /* Ensure stars are above quote */
+  }
+  
+  /* Slider Navigation Dots */
+  .slider-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    z-index: 2; /* Ensure dots are above the angled lines */
+  }
+/* Pagination Dots */
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  background-color: #888;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dot.active {
+  background-color: #fff;
+  transform: scale(1.2);
+}
+
+.slick-slide {
+  padding: 0 15px; /* Adds space between cards */
+}
+
+/* White Dots */
+.slick-dots li button:before {
+  color: white !important;
+  font-size: 12px !important;
+}
