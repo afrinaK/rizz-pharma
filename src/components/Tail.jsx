@@ -65,8 +65,8 @@ const Tail = () => {
       </div>
 
       {/* Background Logo */}
-      <div className="footer-logo">RIZZ </div>
-      <div className="footer-logo2">PHARMA</div>
+      <div className="footer-logo">RIZZ PHARMA</div>
+      
     </footer>
   );
 };
